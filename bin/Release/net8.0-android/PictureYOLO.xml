@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PictureYOLO</name>
+    </assembly>
+    <members>
+        <member name="M:PictureYOLO.MainPage.GetImageSourceFromSKBitmap(SkiaSharp.SKBitmap)">
+            <summary>
+            将 SKBitmap 转换为 ImageSource（使用字节数组避免流被释放）
+            </summary>
+        </member>
+        <member name="M:PictureYOLO.YoloOnnxUse.PreprocessImage(SkiaSharp.SKBitmap)">
+            <summary>
+            预处理图像并返回处理后的位图
+            </summary>
+        </member>
+        <member name="M:PictureYOLO.YoloOnnxUse.Predict(SkiaSharp.SKBitmap)">
+            <summary>
+            使用模型进行预测
+            </summary>
+        </member>
+        <member name="M:PictureYOLO.YoloOnnxUse.DrawPredictions(SkiaSharp.SKBitmap)">
+            <summary>
+            在图像上绘制预测结果
+            </summary>
+        </member>
+        <member name="M:PictureYOLO.YoloOnnxUse.GetPredictions">
+            <summary>
+            获取预测结果
+            </summary>
+        </member>
+        <member name="M:PictureYOLO.YoloOnnxUse.GetPreprocessParams">
+            <summary>
+            获取预处理参数
+            </summary>
+        </member>
+    </members>
+</doc>

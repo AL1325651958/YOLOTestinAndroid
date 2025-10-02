@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PictureYOLO.MainPage"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Maui.Controls;assembly=SkiaSharp.Views.Maui.Controls"
+             Title="图片处理工具">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30">
+            <!-- 图片显示区域 -->
+            <Frame BorderColor="Gray" CornerRadius="10">
+                <Image x:Name="selectedImage"
+                       HeightRequest="300"
+                       Aspect="AspectFit"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       BackgroundColor="LightGray"/>
+            </Frame>
+
+            <!-- 状态标签 -->
+            <Label x:Name="statusLabel" 
+                   Text="请选择图片开始处理" 
+                   HorizontalOptions="Center"
+                   FontAttributes="Italic"/>
+
+            <!-- 按钮区域 -->
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="15">
+                <Button Text="打开图片" 
+                        Clicked="OnPickImageClicked"
+                        BackgroundColor="#512BD4"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Grid.Column="0"/>
+
+                <Button x:Name="useButton"
+                        Grid.Column="1"
+                        Text="使用" 
+                        Clicked="OnUseClicked"
+                        IsEnabled="True"
+                        BackgroundColor="#1C075A"
+                        TextColor="White"
+                        CornerRadius="10"/>
+            </Grid>
+
+            <!-- 处理结果展示 -->
+            <Frame x:Name="resultFrame" 
+                   IsVisible="False"
+                   CornerRadius="10"
+                   BackgroundColor="#E8F5E9">
+                <Label x:Name="resultLabel" 
+                       Text="处理结果将显示在这里" 
+                       FontSize="Medium"/>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

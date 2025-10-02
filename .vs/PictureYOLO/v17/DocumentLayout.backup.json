@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\Code\\VsWork\\PictureYOLO\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\yoloonnxuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:yoloonnxuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "YoloOnnxUse.cs",
+              "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\YoloOnnxUse.cs",
+              "RelativeDocumentMoniker": "YoloOnnxUse.cs",
+              "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\YoloOnnxUse.cs",
+              "RelativeToolTip": "YoloOnnxUse.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAzwAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:20:50.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAADwvwsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-02T18:18:22.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml.cs*",
+              "RelativeToolTip": "MainPage.xaml.cs*",
+              "ViewState": "AgIAADkAAAAAAAAAAAAUwFEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T20:09:27.835Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
