@@ -329,7 +329,7 @@ namespace PictureYOLO
             return interArea / unionArea;
         }
 
-        private (float x, float y, float width, float height) ConvertToOriginalCoordinates(YoloPrediction pred)
+        public (float x, float y, float width, float height) ConvertToOriginalCoordinates(YoloPrediction pred)
         {
             // 首先将中心点坐标转换为左上角坐标
             float boxX1 = pred.X - pred.Width / 2;
@@ -358,6 +358,7 @@ namespace PictureYOLO
         public float Width { get; set; }    // 宽度
         public float Height { get; set; }   // 高度
         public float Confidence { get; set; } // 置信度
+        public int ClassIndex { get; set; } // 类别索引
         public int ClassId { get; set; }    // 类别ID
     }
 }

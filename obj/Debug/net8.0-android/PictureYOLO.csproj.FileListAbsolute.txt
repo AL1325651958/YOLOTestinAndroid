@@ -1076,3 +1076,4 @@ F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-android\stamp\_ConvertResourcesCases
 F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-android\PictureYOLO.sourcelink.json

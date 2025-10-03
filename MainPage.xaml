@@ -10,8 +10,7 @@
             <!-- 图片显示区域 -->
             <Frame BorderColor="Gray" CornerRadius="10">
                 <Image x:Name="selectedImage"
-                       HeightRequest="300"
-                       Aspect="AspectFit"
+                       HeightRequest="150"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
                        BackgroundColor="LightGray"/>
@@ -19,37 +18,63 @@
 
             <!-- 状态标签 -->
             <Label x:Name="statusLabel" 
-                   Text="请选择图片开始处理" 
+                   Text="-----" 
                    HorizontalOptions="Center"
                    FontAttributes="Italic"/>
 
-            <!-- 按钮区域 -->
-            <Grid ColumnDefinitions="*,*" ColumnSpacing="15">
+            <Grid RowDefinitions="Auto,Auto" RowSpacing="15" ColumnSpacing="15" Padding="10">
                 <Button Text="打开图片" 
-                        Clicked="OnPickImageClicked"
-                        BackgroundColor="#512BD4"
-                        TextColor="White"
-                        CornerRadius="10"
-                        Grid.Column="0"/>
+                    Clicked="OnPickImageClicked"
+                    BackgroundColor="#512BD4"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Grid.Row="0"/>
+                <Grid ColumnDefinitions="*,*,*" 
+                    ColumnSpacing="10"
+                    Grid.Row="1"
+                    HorizontalOptions="FillAndExpand">
 
-                <Button x:Name="useButton"
-                        Grid.Column="1"
-                        Text="使用" 
-                        Clicked="OnUseClicked"
-                        IsEnabled="True"
-                        BackgroundColor="#1C075A"
-                        TextColor="White"
-                        CornerRadius="10"/>
+                    <Button x:Name="PreButton"
+                            Text="上一张" 
+                            Clicked="PreButton_Clicked"
+                            BackgroundColor="Green"
+                            TextColor="White"
+                            CornerRadius="10"
+                            IsEnabled="False"
+                            Grid.Column="0"/>
+                    <!-- 第一列 -->
+
+                    <Button x:Name="SaveButton"
+                            Text="Save" 
+                            Clicked="SaveButton_Clicked"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Grid.Column="1"/>
+                    <!-- 第二列 -->
+
+                    <Button x:Name="NextButton"
+                            Clicked="NextButton_Clicked"
+                            Text="下一张" 
+                            IsEnabled="False"
+                            BackgroundColor="Green"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Grid.Column="2"/>
+                    <!-- 第三列 -->
+                </Grid>
             </Grid>
 
-            <!-- 处理结果展示 -->
+
             <Frame x:Name="resultFrame" 
-                   IsVisible="False"
                    CornerRadius="10"
-                   BackgroundColor="#E8F5E9">
-                <Label x:Name="resultLabel" 
-                       Text="处理结果将显示在这里" 
-                       FontSize="Medium"/>
+                   BackgroundColor="#E8F5E9"
+                   IsVisible="False">
+                    <skia:SKCanvasView x:Name="waveformCanvas"
+                                       HeightRequest="150"
+                                       PaintSurface="OnWaveformPaintSurface"
+                                       Touch="waveformCanvas_Touch"
+                                       EnableTouchEvents="True"/>
             </Frame>
         </VerticalStackLayout>
     </ScrollView>
