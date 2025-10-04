@@ -48,7 +48,7 @@ namespace PictureYOLO
 
         private async Task LoadYoloModelAsync()
         {
-            string[] classNames = { "blue" };
+            string[] classNames = { "blue", "fluorescence" };
             using var stream = await FileSystem.OpenAppPackageFileAsync("best.onnx");
             using var memoryStream = new MemoryStream();
             await stream.CopyToAsync(memoryStream);
@@ -62,6 +62,9 @@ namespace PictureYOLO
                 PickerTitle = "选择图片",
                 FileTypes = FilePickerFileType.Images
             });
+
+            if (result == null)
+                return;
 
             if (result != null)
             {
@@ -91,8 +94,14 @@ namespace PictureYOLO
                 statusLabel.Text = $"图片加载成功: {_originalBitmap.Width}x{_originalBitmap.Height}";
 
                 // 清空旧的裁剪结果
-                ClearCroppedTargets();
+
                 UpdateNavigationButtonState();
+                ClearCroppedTargets();
+                await MainThread.InvokeOnMainThreadAsync(() =>
+                {
+                    // 强制调用 DrawWaveform 并清空画布
+                    waveformCanvas.InvalidateSurface();
+                });
             }
 
             if (_originalBitmap == null || _preprocessedBitmap == null)
@@ -139,6 +148,13 @@ namespace PictureYOLO
                         {
                             targetProcessor.Rotate90(ref targetProcessor._processedBitmap);
                         }
+                        switch(pred.ClassId)
+                        {
+                            case 0:targetProcessor.CurrentAnalysisMode = ImageProcess.ChannelDiffMode.MaxDifference; break;
+
+                            case 1:targetProcessor.CurrentAnalysisMode = ImageProcess.ChannelDiffMode.Gray;break;
+                        }
+
                         targetProcessor._processedBitmap = targetProcessor.StretchImageWidth(targetProcessor._processedBitmap, 350).Copy();
                         targetProcessor.ApplyChannelDiff(targetProcessor._processedBitmap, targetProcessor.CurrentAnalysisMode);
                         _croppedTargets.Add(new CroppedTarget
@@ -264,13 +280,16 @@ namespace PictureYOLO
                 var currentTarget = _croppedTargets[_currentIndex];
                 selectedImage.Source = GetImageSourceFromSKBitmap(currentTarget.Bitmap);
                 string objectName;
-                if (currentTarget.ClassIndex == 0)
+                switch(currentTarget.ClassIndex)
                 {
-                    objectName = "蓝色微球试纸条";
-                }
-                else
-                {
-                    objectName = $"目标 (类别索引: {currentTarget.ClassIndex})";
+                    case 0: objectName = "多色微球试纸条";
+                        _croppedTargets[_currentIndex].Processor.CurrentAnalysisMode = ImageProcess.ChannelDiffMode.MaxDifference;
+                        break;
+                    case 1: objectName = "荧光试纸条";
+                        _croppedTargets[_currentIndex].Processor.CurrentAnalysisMode = ImageProcess.ChannelDiffMode.Gray;
+                        break;
+                    default: objectName = "索引类别未知";
+                        break;
                 }
                 statusLabel.Text = $"{objectName} | 当前: {_currentIndex + 1} / {_croppedTargets.Count}";
             }
@@ -351,7 +370,10 @@ namespace PictureYOLO
         private void DrawWaveform(SKCanvas canvas, int width, int height)
         {
             if (_currentIndex < 0 || _currentIndex >= _croppedTargets.Count)
+            {
+                canvas.Clear();
                 return;
+            }
             var currentTarget = _croppedTargets[_currentIndex];
 
             var processor = currentTarget?.Processor;

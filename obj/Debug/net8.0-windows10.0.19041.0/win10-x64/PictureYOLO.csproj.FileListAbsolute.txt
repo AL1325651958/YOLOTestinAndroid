@@ -194,3 +194,6 @@ F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Micros
 F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Numerics.Tensors.dll
 F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\onnxruntime.lib
 F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\onnxruntime_providers_shared.lib
+F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\PictureYOLO.Properties.Resources.resources
+F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\PictureYOLO.csproj.GenerateResource.cache
+F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\PictureYOLO.sourcelink.json

@@ -826,7 +826,7 @@ namespace PictureYOLO
         //灰度融合法
         private static byte CalculateGray(byte r, byte g, byte b)
         {
-            return (byte)(r * 0.299f + g * 0.587f + b * 0.114f);
+            return (byte)((r * 0.299f + g * 0.587f + b * 0.114f));
         }
         public enum ChannelDiffMode
         {
@@ -845,7 +845,7 @@ namespace PictureYOLO
             return mode switch
             {
                 // 灰度值：直接计算灰度值
-                ChannelDiffMode.Gray => CalculateGray(r, g, b),
+                ChannelDiffMode.Gray => (CalculateGray(r, g, b)),
                 // 标准差异：突出红色与背景的差异
                 ChannelDiffMode.Standard => (byte)Math.Clamp((r - (g + b) / 2), 0, 255),
                 // 增强红色：更强烈的红色对比

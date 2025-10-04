@@ -40,8 +40,8 @@
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\Resources\Raw\yolo11n.onnx">
-      <PackagePath>yolo11n.onnx</PackagePath>
+    <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\Resources\Raw\best.onnx">
+      <PackagePath>best.onnx</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>

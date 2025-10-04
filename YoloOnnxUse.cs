@@ -66,7 +66,8 @@ namespace PictureYOLO
 
             using (var canvas = new SKCanvas(targetBitmap))
             {
-                canvas.Clear(SKColors.Black);
+                var gray114 = new SKColor(114, 114, 114);
+                canvas.Clear(gray114);
                 var destRect = new SKRect(_xOffset, _yOffset,
                                          _xOffset + scaledWidth, _yOffset + scaledHeight);
                 canvas.DrawBitmap(originalBitmap, destRect);
@@ -197,9 +198,9 @@ namespace PictureYOLO
                     var pixel = bitmap.GetPixel(x, y);
 
                     // 归一化到0-1范围并转换为BGR顺序
-                    tensor[0, 0, y, x] = pixel.Blue / 255.0f;  // B
+                    tensor[0, 0, y, x] = pixel.Red / 255.0f;  // B
                     tensor[0, 1, y, x] = pixel.Green / 255.0f; // G
-                    tensor[0, 2, y, x] = pixel.Red / 255.0f;   // R
+                    tensor[0, 2, y, x] = pixel.Blue / 255.0f;   // R
                 }
             }
 
@@ -281,7 +282,7 @@ namespace PictureYOLO
         {
             predictions = predictions.OrderByDescending(p => p.Confidence).ToList();
             var filteredPredictions = new List<YoloPrediction>();
-            const float iouThreshold = 0.5f;
+            const float iouThreshold = 0.35f;
 
             while (predictions.Count > 0)
             {
