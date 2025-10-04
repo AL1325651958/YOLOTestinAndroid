@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\yoloonnxuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:yoloonnxuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\imageprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:imageprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|f:\\code\\vswork\\pictureyolo\\yoloonnxuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62C37E7-C19E-4FF9-813C-DF61C5B521DD}|PictureYOLO.csproj|solutionrelative:yoloonnxuse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "YoloOnnxUse.cs",
               "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\YoloOnnxUse.cs",
               "RelativeDocumentMoniker": "YoloOnnxUse.cs",
@@ -42,33 +38,19 @@
               "RelativeToolTip": "YoloOnnxUse.cs",
               "ViewState": "AgIAAL4AAAAAAAAAAAAIwMoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T16:46:47.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T16:46:47.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ImageProcess.cs",
               "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\ImageProcess.cs",
               "RelativeDocumentMoniker": "ImageProcess.cs",
               "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\ImageProcess.cs",
               "RelativeToolTip": "ImageProcess.cs",
-              "ViewState": "AgIAAF4DAAAAAAAAAAAWwD8DAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADAEAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T16:38:23.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAkwAkAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-03T16:21:35.635Z",
               "EditorCaption": ""
             },
             {
@@ -77,9 +59,9 @@
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml.cs",
-              "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAASwEIAAAAXAAAAAAAAAA==",
+              "ToolTip": "F:\\Code\\VsWork\\PictureYOLO\\MainPage.xaml.cs*",
+              "RelativeToolTip": "MainPage.xaml.cs*",
+              "ViewState": "AgIAAL0BAAAAAAAAAAAmwMoBAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T10:24:33.369Z",
               "EditorCaption": ""

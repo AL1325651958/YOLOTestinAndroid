@@ -29,25 +29,25 @@
     <AppXManifest Include="F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-10-04T04:19:30.138</Modified>
+      <Modified>2025-10-04T04:59:09.207</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-10-04T04:08:05.553</Modified>
+      <Modified>2025-10-04T04:41:41.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\PictureYOLO.runtimeconfig.json">
       <PackagePath>PictureYOLO.runtimeconfig.json</PackagePath>
-      <Modified>2025-10-04T04:08:05.188</Modified>
+      <Modified>2025-10-04T04:41:41.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\PictureYOLO.dll">
       <PackagePath>PictureYOLO.dll</PackagePath>
-      <Modified>2025-10-04T04:19:29.527</Modified>
+      <Modified>2025-10-04T04:59:08.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>PictureYOLO.exe</PackagePath>
-      <Modified>2025-10-04T04:19:29.692</Modified>
+      <Modified>2025-10-04T04:59:08.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -299,7 +299,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="F:\Code\VsWork\PictureYOLO\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\PictureYOLO.deps.json">
       <PackagePath>PictureYOLO.deps.json</PackagePath>
-      <Modified>2025-10-04T04:08:05.136</Modified>
+      <Modified>2025-10-04T04:41:41.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\13256\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

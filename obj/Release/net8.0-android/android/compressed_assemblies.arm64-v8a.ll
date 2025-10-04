@@ -106,7 +106,7 @@ target triple = "aarch64-unknown-linux-android21"
 		ptr @__compressedAssemblyData_16; uint8_t* data (0x0)
 	}, ; 16
 	%struct.CompressedAssemblyDescriptor {
-		i32 152064, ; uint32_t uncompressed_file_size (0x25200)
+		i32 154624, ; uint32_t uncompressed_file_size (0x25c00)
 		i8 0, ; bool loaded
 		ptr @__compressedAssemblyData_17; uint8_t* data (0x0)
 	}, ; 17
@@ -126,7 +126,7 @@ target triple = "aarch64-unknown-linux-android21"
 		ptr @__compressedAssemblyData_20; uint8_t* data (0x0)
 	}, ; 20
 	%struct.CompressedAssemblyDescriptor {
-		i32 91648, ; uint32_t uncompressed_file_size (0x16600)
+		i32 92160, ; uint32_t uncompressed_file_size (0x16800)
 		i8 0, ; bool loaded
 		ptr @__compressedAssemblyData_21; uint8_t* data (0x0)
 	}, ; 21
@@ -679,11 +679,11 @@ target triple = "aarch64-unknown-linux-android21"
 @__compressedAssemblyData_14 = internal dso_local global [666656 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_15 = internal dso_local global [18984 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_16 = internal dso_local global [1789952 x i8] zeroinitializer, align 1
-@__compressedAssemblyData_17 = internal dso_local global [152064 x i8] zeroinitializer, align 1
+@__compressedAssemblyData_17 = internal dso_local global [154624 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_18 = internal dso_local global [50224 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_19 = internal dso_local global [26152 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_20 = internal dso_local global [33864 x i8] zeroinitializer, align 1
-@__compressedAssemblyData_21 = internal dso_local global [91648 x i8] zeroinitializer, align 1
+@__compressedAssemblyData_21 = internal dso_local global [92160 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_22 = internal dso_local global [13824 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_23 = internal dso_local global [20480 x i8] zeroinitializer, align 1
 @__compressedAssemblyData_24 = internal dso_local global [10240 x i8] zeroinitializer, align 1

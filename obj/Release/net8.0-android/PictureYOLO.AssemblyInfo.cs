@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PictureYOLO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+ef43c723b50fed919b3de8a7e3520ccc326485e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+e9ed9946add20cabbe16be090fa0898e031d6080")]
 [assembly: System.Reflection.AssemblyProductAttribute("PictureYOLO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PictureYOLO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

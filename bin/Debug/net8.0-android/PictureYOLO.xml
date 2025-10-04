@@ -37,6 +37,22 @@
             更新 '上一张' 和 '下一张' 按钮的启用状态
             </summary>
         </member>
+        <member name="T:PictureYOLO.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:PictureYOLO.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:PictureYOLO.Properties.Resources.Culture">
+            <summary>
+              重写当前线程的 CurrentUICulture 属性，对
+              使用此强类型资源类的所有资源查找执行重写。
+            </summary>
+        </member>
         <member name="M:PictureYOLO.YoloOnnxUse.PreprocessImage(SkiaSharp.SKBitmap)">
             <summary>
             预处理图像并返回处理后的位图
